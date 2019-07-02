@@ -1,0 +1,32 @@
+topbar {}
+
+.home-container {
+    margin-top: 56px;
+    @media only screen and (max-width: 600px) {
+        margin-top: 0;
+    }
+}
+
+.flex-wrapper {
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+}
+
+main {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    float: left;
+    position: relative;
+    min-height: calc(100vh - 61px);
+    width: 100%;
+    @media only screen and (max-width: 600px) {
+        padding-top: 50px;
+    }
+}
+
+main>div {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}

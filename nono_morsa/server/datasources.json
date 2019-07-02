@@ -1,0 +1,17 @@
+{
+    "db": {
+        "name": "db",
+        "connector": "memory"
+    },
+    "morsa_nono": {
+        "host": "",
+        "port": 5432,
+        "url": "postgres://nono:123456@localhost:5432/api_user_nono?ssl=false",
+        "database": "",
+        "password": "",
+        "name": "morsa_nono",
+        "user": "",
+        "connector": "postgresql",
+        "ssl": false
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "name": "usuario",
+    "plural": "usuarios",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "id": {
+            "type": "number",
+            "required": true,
+            "index": true
+        },
+        "nickname": {
+            "type": "string",
+            "required": true,
+            "index": {
+                "unique": true
+            }
+        },
+        "nombre": {
+            "type": "string",
+            "required": true
+        },
+        "apellidopaterno": {
+            "type": "string",
+            "required": true
+        },
+        "apellidomaterno": {
+            "type": "string",
+            "required": true
+        },
+        "activo": {
+            "type": "boolean",
+            "required": true,
+            "default": true
+        },
+        "fechaingreso": {
+            "type": "date",
+            "required": true,
+            "defaultFn": "now"
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

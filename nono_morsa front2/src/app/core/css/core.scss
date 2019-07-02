@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../app/core/fonts/MaterialIcons-Regular.eot');
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url('../app/core/fonts/MaterialIcons-Regular.woff2') format('woff2'), url('../app/core/fonts/MaterialIcons-Regular.woff') format('woff'), url('../app/core/fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+$primary-color: #4857ce;
+$light: #F5F5F5;
+$font-color: #2c3e50;
+$height-brand-sm: 48px;
+.discount {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    padding: 2px 8px;
+    border-radius: 0px 15px 15px 0px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #D8263C;
+    z-index: 3;
+}
+
+.fade-in {
+    transform: translateY(49px) !important;
+    transition: ease 0.3s;
+}
+
+.fade-out {
+    transform: translateY(0px) !important;
+    transition: ease 0.3s;
+}
+
+.first-fade {
+    transform: translateY(141px) !important;
+    @media only screen and (max-width: 400px) {
+        transform: translateY(139px) !important;
+    }
+    @media only screen and (max-width: 320px) {
+        transform: translateY(137px) !important;
+    }
+}
+
+.first-padding {
+    @media only screen and (max-width: 600px) {
+        min-height: calc(100vh - 140px);
+        margin-top: 89px !important;
+    }
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+[ng-click],
+[data-ng-click] {
+    cursor: pointer;
+}
+
+body {
+    background: $light;
+    overflow: hidden;
+}
+
+
+/* Cols 20%, 5 equals cols */
+
+.row .col.s20percent {
+    width: 20%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.row .col.offset-s20percent {
+    margin-left: 20%;
+}
+
+.row .col.pull-s20percent {
+    right: 20%;
+}
+
+.row .col.push-s20percent {
+    left: 20%;
+}
+
+@media only screen and (min-width: 601px) {
+    .row .col.m20percent {
+        width: 20%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .row .col.offset-m20percent {
+        margin-left: 20%;
+    }
+    .row .col.pull-m20percent {
+        right: 20%;
+    }
+    .row .col.push-m20percent {
+        left: 20%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .row .col.l20percent {
+        width: 20%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    .row .col.offset-l20percent {
+        margin-left: 20%;
+    }
+    .row .col.pull-l20percent {
+        right: 20%;
+    }
+    .row .col.push-l20percent {
+        left: 20%;
+    }
+}
+
+
+/* Cols 20% end */

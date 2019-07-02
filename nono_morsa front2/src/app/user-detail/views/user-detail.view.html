@@ -1,0 +1,79 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div ng-app="miFormulario" ng-controller="UserDetailController">
+
+            <form name="registro" id="registro" ng-submit="submit(vm.users)" class="col s12" novalidate>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input class="validate" type="text" name="nickname" ng-model="vm.users.nickname" valminimo=2 required maxlength=12 data-length=12 restrict="textNumber" ng-disabled="vm.isDisabled" autocomplete="off">
+                        <label ng-class="active " for="nickname ">Nickname</label>
+
+                        <div role="alert" style="color:maroon" ng-show="!registro.nickname.$pristine || submitted">
+                            <span class="error" ng-show="registro.nickname.$error.required">
+                                Requerido</span>
+                            <span class="error" ng-show="registro.nickname.$invalid && !registro.nickname.$error.required">
+                                Minimo 2 carecteres
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input class="validate" type="text" name="nombre" ng-model="vm.users.nombre" restrict="text" valminimo=2 maxlength=40 data-length=40 required autocomplete="off">
+                        <label ng-class="active" for="nombre">Nombre</label>
+
+                        <div role="alert" style="color:maroon" ng-show="!registro.nombre.$pristine || submitted">
+                            <span class="error" ng-show="registro.nombre.$error.required">
+                                Requerido</span>
+                            <span class="error" ng-show="registro.nombre.$invalid && !registro.nombre.$error.required">
+                                Minimo 2 carecteres
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input class="validate" type="text" name="apellidopaterno" ng-model="vm.users.apellidopaterno" valminimo=2 maxlength=40 data-length=40 required restrict="text" autocomplete="off">
+                        <label ng-class="active" for="apellidopaterno">Apellido Paterno</label>
+
+                        <div role="alert" style="color:maroon" ng-show="!registro.apellidopaterno.$pristine || submitted">
+                            <span class="error" ng-show="registro.apellidopaterno.$error.required">
+                                Requerido</span>
+                            <span class="error" ng-show="registro.apellidopaterno.$invalid && !registro.apellidopaterno.$error.required">
+                                Minimo 2 carecteres
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <input class="validate" type="text" name="apellidomaterno" ng-model="vm.users.apellidomaterno" valminimo=2 maxlength=40 data-length=40 required restrict="text" autocomplete="off">
+                        <label ng-class="active " for="apellidomaterno ">Apellido Materno</label>
+
+                        <div role="alert" style="color:maroon" ng-show="!registro.apellidomaterno.$pristine || submitted">
+                            <span class="error" ng-show="registro.apellidomaterno.$error.required">
+                                Requerido</span>
+                            <span class="error" ng-show="registro.apellidomaterno.$invalid && !registro.apellidomaterno.$error.required">
+                                Minimo 2 carecteres
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <button class="btn waves-effect waves-light" type="submit" ng-disabled="registro.$invalid">
+                        Actualizar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

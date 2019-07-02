@@ -1,0 +1,24 @@
+{
+    "name": "fountain-inject",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": "3.3.1",
+        "angular": "^1.6.2",
+        "angular-ui-router": "1.0.0-beta.3",
+        "angular-resource": "1.5",
+        "angular-materialize": "0.2.2",
+        "materialize": "1.0.0",
+        "crypto-js": "^3.1.9",
+        "angular-local-storage": "^0.7.1",
+        "ngclipboard": "^2.0.0",
+        "angular-owl-carousel-directive": "*"
+    },
+    "devDependencies": {
+        "angular-mocks": "^1.6.2"
+    },
+    "resolutions": {
+        "jquery": "3.3.1",
+        "angular": "1.5",
+        "materialize": "1.0.0"
+    }
+}
